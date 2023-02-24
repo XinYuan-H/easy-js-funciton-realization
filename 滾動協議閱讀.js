@@ -13,7 +13,9 @@ info.onscroll = function(){
 
 
 agree.onclick = function(){
-    if(agree.checked){
-    submit.disabled = false;};
+    submit.disabled = false;
+    if(!agree.checked){
+        submit.disabled = true;
+    }
 };
 
